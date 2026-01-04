@@ -23,6 +23,7 @@ export interface Project {
     name: string;
     description: string;
     date: string;
+    id: number;
     link?: string;
 }
 
@@ -97,6 +98,7 @@ export const selfProjects: Project[] = [{
         with specific geographic zones to predict the imbalance between ride-sharing supply and demand before it happens.
     `,
     date: "December 2025",
+    id: 1,
 }, {
     name: "Ghost Writer",
     description: `
@@ -104,6 +106,7 @@ export const selfProjects: Project[] = [{
         engine that automates industry-standard formatting (INT/EXT, Dialogue) through semantic block-level data structures.
     `,
     date: "December 2025",
+    id: 2,
 }, {
     name: "GG Trading",
     description: `
@@ -112,6 +115,7 @@ export const selfProjects: Project[] = [{
         implements server-side caching strategies to handle complex portfolio aggregations.
     `,
     date: "October 2025",
+    id: 3,
 }];
 
 export const selfResumeData: ResumeData = {
