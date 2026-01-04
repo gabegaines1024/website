@@ -6,7 +6,7 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
-import { Project } from "@/app/data/resume-data"
+import { Project } from "@/app/data/ResumeData"
 
 export default function ProjectCard({ project }: { project: Project }) {
     return (
