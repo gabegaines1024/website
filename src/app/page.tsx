@@ -1,14 +1,14 @@
 import { Separator } from '@/components/ui/separator';
-import Home from './about/page';
 import ProjectCard from './components/ProjectCard';
-import { selfProjects } from './data/ResumeData';
+import { selfProjects, selfResumeData } from './data/ResumeData';
 import Section from './components/Section';
+import Header from './components/Header';
 
 
 export default function App(){
   return (
     <div className="flex flex-col gap-4">
-      <Home />
+      <Header data={selfResumeData} />
       <Section title="Projects">
         <div className="flex flex-col gap-4">
           {selfProjects.map((project, index) => (
@@ -16,6 +16,7 @@ export default function App(){
           ))}
         </div>
       </Section>
+      <Separator className="my-4" />
     </div>
   )
 }

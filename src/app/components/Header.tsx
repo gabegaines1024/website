@@ -1,7 +1,7 @@
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Mail, Github, Linkedin } from "lucide-react";
 import { ResumeData } from "@/app/data/ResumeData";
+import Image from "next/image";
 
 export default function Header({ data }: { data: ResumeData }) {
   return (
@@ -36,10 +36,14 @@ export default function Header({ data }: { data: ResumeData }) {
           </Button>
         </div>
       </div>
-      <Avatar className="h-32 w-32 md:h-40 md:w-40 border-4 border-border shadow-lg">
-        <AvatarImage src="/profile.jpg" alt={data.name} />
-        <AvatarFallback className="text-2xl">GG</AvatarFallback>
-      </Avatar>
+      <div className="relative h-48 w-36 md:h-64 md:w-48 border-4 border-border shadow-lg rounded-lg overflow-hidden">
+        <Image 
+          src="/profile.jpg" 
+          alt={data.name}
+          fill
+          className="object-cover"
+        />
+      </div>
     </header>
   );
 }
