@@ -1,30 +1,39 @@
+export interface Education {
+    school: string;
+    degree: string;
+    date: string;
+    gpa: string;
+}
+
+export interface Skills {
+    languages_and_tools: string[];
+    machineLearningAndDataScience: string[];
+    backendAndWebFrameworks: string[];
+}
+
+export interface Leadership {
+    position: string;
+    description: string;
+    date: string;
+    organization: string;
+    impact: string;
+}
+
+export interface Project {
+    name: string;
+    description: string;
+    date: string;
+    link?: string;
+}
+
 export interface ResumeData {
     name: string;
     email: string;
     objective: string;
-    education: {
-        school: string;
-        degree: string;
-        date: string;
-        gpa: string;
-    }[];
-    skills:{
-        languages_and_tools: string[];
-        machineLearningAndDataScience: string[];
-        backendAndWebFrameworks: string[];
-    };
-    leadership: {
-        position: string;
-        description: string;
-        date: string;
-        organization: string;
-        impact: string;
-    }[];  
-    projects: {
-        name: string;
-        description: string;
-        date: string;
-    }[];
+    education: Education[];
+    skills: Skills;
+    leadership: Leadership[];
+    projects: Project[];
 }
 
 export const selfResumeData: ResumeData = {
