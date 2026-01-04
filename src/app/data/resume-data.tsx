@@ -36,83 +36,90 @@ export interface ResumeData {
     projects: Project[];
 }
 
+export const selfEducation: Education[] = [
+    {
+        school: "Indiana University Bloomington",
+        degree: "Bachelor of Science in Computer Science and Mathematics with a specialization in Artificial Intelligence",
+        date: "2024-2028",
+        gpa: "3.763 / 4.000",
+    }
+];
+
+export const selfSkills: Skills = {
+    languages_and_tools: ["Python", "TypeScript", "JavaScript", "C", "HTML", "CSS", "Git", "Vim", "Visual Studio Code", "Cursor"],
+    machineLearningAndDataScience: ["Pandas", "NumPy", "Scikit-learn", "TensorFlow"],
+    backendAndWebFrameworks: ["React", "Next.js", "FastAPI", "Flask", "SQLAlchemy", "SQLite", "Convex"],
+};
+
+export const selfLeadership: Leadership[] = [{
+    position: "Member",
+    description: "I am a member of ColorStack, a club  that helps African American/Latinx students in STEM field",
+    date: "2025",
+    organization: "ColorStack",
+    impact: "I participated in weekly workshops and events that helped me learn about the latest technologies and trends in the industry.",
+}, {
+    position: "Member",
+    description: "I am a member of Math Club, a club that strengthened analytical problem-solving skills by engaging in weekly advanced theoretical discussions and collaborating with faculty to deconstruct complex mathematical proofs.",
+    date: "2025",
+    organization: "Math Club",
+    impact: "I strengthened my analytical problem-solving skills by engaging in weekly advanced theoretical discussions and collaborating with faculty to deconstruct complex mathematical proofs.",
+}, {
+    position: "Captian",
+    description: "I was the captian of an intramural volleyball team.",
+    date: "2025",
+    organization: "Indiana University Intramural Sports",
+    impact: "I organized and led our team in competition against other intramural teams."
+}, {
+    position: "Member",
+    description: "I was a member of Association of Computing Machinery, a club that helps students learn about the latest technologies and trends in the industry.",
+    date: "2024",
+    organization: "Association of Computing Machinery",
+    impact: "I was able to attend weekly workshops and events that helped me learn about the latest technologies and trends in the industry.",
+}, {
+    position: "Captian",
+    description: "I was the captian of an intramural basketball team.",
+    date: "2024",
+    organization: "University of Southern Indiana Intramural Sports",
+    impact: "I organized and led our team in competition against other intramural teams."
+}, {
+    position: "Captian",
+    description: "I was the captian of an intramural basketball team in the form of 3v3 tournament.",
+    date: "2024",
+    organization: "University of Southern Indiana Intramural Sports",
+    impact: "I organized and led our team in competition against other intramural teams."
+}];
+
+export const selfProjects: Project[] = [{
+    name: "Surge Multiplier Prediction",
+    description: `
+        Enabled proactive fleet allocation strategies by achieving a 15-minute predictive horizon for demand surges through the
+        engineering of a Spatio-Temporal Regression model that utilizes GeoPandas to correlate complex urban mobility patterns
+        with specific geographic zones to predict the imbalance between ride-sharing supply and demand before it happens.
+    `,
+    date: "December 2025",
+}, {
+    name: "Ghost Writer",
+    description: `
+        Architected a real-time collaborative screenplay editor using Next.js 15 and Convex, engineering a custom TipTap-based
+        engine that automates industry-standard formatting (INT/EXT, Dialogue) through semantic block-level data structures.
+    `,
+    date: "December 2025",
+}, {
+    name: "GG Trading",
+    description: `
+        Optimized data retrieval performance for high-frequency trading dashboards, achieving a 40% reduction in query
+        latency, by architecting a RESTful FastAPI backend that utilizes SQLAlchemy for normalized schema design and
+        implements server-side caching strategies to handle complex portfolio aggregations.
+    `,
+    date: "October 2025",
+}];
+
 export const selfResumeData: ResumeData = {
     name: "Gabe Gaines",
     email: "gabegaines1024@gmail.com",
     objective: "I am aspiring software engineer/ ML/AI engineer with a passion for building scalable backends & ML Pipelines",
-    education: [
-        {
-            school: "Indiana University Bloomington",
-            degree: "Bachelor of Science in Computer Science and Mathematics with a specialization in Artificial Intelligence",
-            date: "2024-2028",
-            gpa: "3.763 / 4.000",
-        }
-    ],
-    skills: {
-        languages_and_tools: ["Python", "TypeScript", "JavaScript", "C", "HTML", "CSS", "Git", "Vim", "Visual Studio Code", "Cursor"],
-        machineLearningAndDataScience: ["Pandas", "NumPy", "Scikit-learn", "TensorFlow"],
-        backendAndWebFrameworks: ["React", "Next.js", "FastAPI", "Flask", "SQLAlchemy", "SQLite", "Convex"],
-    },
-    leadership: [{
-        position: "Member",
-        description: "I am a member of ColorStack, a club  that helps African American/Latinx students in STEM field",
-        date: "2025",
-        organization: "ColorStack",
-        impact: "I participated in weekly workshops and events that helped me learn about the latest technologies and trends in the industry.",
-    }, {
-        position: "Member",
-        description: "I am a member of Math Club, a club that strengthened analytical problem-solving skills by engaging in weekly advanced theoretical discussions and collaborating with faculty to deconstruct complex mathematical proofs.",
-        date: "2025",
-        organization: "Math Club",
-        impact: "I strengthened my analytical problem-solving skills by engaging in weekly advanced theoretical discussions and collaborating with faculty to deconstruct complex mathematical proofs.",
-    }, {
-        position: "Captian",
-        description: "I was the captian of an intramural volleyball team.",
-        date: "2025",
-        organization: "Indiana University Intramural Sports",
-        impact: "I organized and led our team in competition against other intramural teams."
-    }, {
-        position: "Member",
-        description: "I was a member of Association of Computing Machinery, a club that helps students learn about the latest technologies and trends in the industry.",
-        date: "2024",
-        organization: "Association of Computing Machinery",
-        impact: "I was able to attend weekly workshops and events that helped me learn about the latest technologies and trends in the industry.",
-    }, {
-        position: "Captian",
-        description: "I was the captian of an intramural basketball team.",
-        date: "2024",
-        organization: "University of Southern Indiana Intramural Sports",
-        impact: "I organized and led our team in competition against other intramural teams."
-    }, {
-        position: "Captian",
-        description: "I was the captian of an intramural basketball team in the form of 3v3 tournament.",
-        date: "2024",
-        organization: "University of Southern Indiana Intramural Sports",
-        impact: "I organized and led our team in competition against other intramural teams."
-    }],
-    projects: [{
-        name: "Surge Multiplier Prediction",
-        description: `
-            Enabled proactive fleet allocation strategies by achieving a 15-minute predictive horizon for demand surges through the
-            engineering of a Spatio-Temporal Regression model that utilizes GeoPandas to correlate complex urban mobility patterns
-            with specific geographic zones to predict the imbalance between ride-sharing supply and demand before it happens.
-        `,
-        date: "December 2025",
-    }, {
-        name: "Ghost Writer",
-        description: `
-            Architected a real-time collaborative screenplay editor using Next.js 15 and Convex, engineering a custom TipTap-based
-            engine that automates industry-standard formatting (INT/EXT, Dialogue) through semantic block-level data structures.
-        `,
-        date: "December 2025",
-    }, {
-        name: "GG Trading",
-        description: `
-            Optimized data retrieval performance for high-frequency trading dashboards, achieving a 40% reduction in query
-            latency, by architecting a RESTful FastAPI backend that utilizes SQLAlchemy for normalized schema design and
-            implements server-side caching strategies to handle complex portfolio aggregations.
-        `,
-        date: "October 2025",
-    }]
-    
+    education: selfEducation,
+    skills: selfSkills,
+    leadership: selfLeadership,
+    projects: selfProjects,
 }
