@@ -1,4 +1,4 @@
-interface ResumeData {
+export interface ResumeData {
     name: string;
     email: string;
     objective: string;
@@ -27,7 +27,7 @@ interface ResumeData {
     }[];
 }
 
-const resumeData: ResumeData = {
+export const selfResumeData: ResumeData = {
     name: "Gabe Gaines",
     email: "gabegaines1024@gmail.com",
     objective: "I am aspiring software engineer/ ML/AI engineer with a passion for building scalable backends & ML Pipelines",
