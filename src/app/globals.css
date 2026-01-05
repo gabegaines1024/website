@@ -123,3 +123,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .skills-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
