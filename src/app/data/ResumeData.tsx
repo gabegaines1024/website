@@ -94,16 +94,15 @@ export const selfProjects: Project[] = [{
     name: "Surge Multiplier Prediction",
     description: `
         Enabled proactive fleet allocation strategies by achieving a 15-minute predictive horizon for demand surges through the
-        engineering of a Spatio-Temporal Regression model that utilizes GeoPandas to correlate complex urban mobility patterns
-        with specific geographic zones to predict the imbalance between ride-sharing supply and demand before it happens.
+    engineering of a Spatio-Temporal Regression model that utilizes GeoPandas to correlate complex urban mobility patterns
+    with specific geographic zones to predict the imbalance between ride-sharing supply and demand before it happens.
     `,
     date: "December 2025",
     id: 1,
 }, {
     name: "Ghost Writer",
     description: `
-        Architected a real-time collaborative screenplay editor using Next.js 15 and Convex, engineering a custom TipTap-based
-        engine that automates industry-standard formatting (INT/EXT, Dialogue) through semantic block-level data structures.
+        Architected a real-time collaborative screenplay editor using Next.js 15 and Convex, engineering a custom TipTap-based editor that automates industry-standard formatting (INT/EXT, Dialogue) through semantic block-level data structures.
     `,
     date: "December 2025",
     id: 2,
@@ -111,8 +110,8 @@ export const selfProjects: Project[] = [{
     name: "GG Trading",
     description: `
         Optimized data retrieval performance for high-frequency trading dashboards, achieving a 40% reduction in query
-        latency, by architecting a RESTful FastAPI backend that utilizes SQLAlchemy for normalized schema design and
-        implements server-side caching strategies to handle complex portfolio aggregations.
+    latency, by architecting a RESTful FastAPI backend that utilizes SQLAlchemy for normalized schema design and
+    implements server-side caching strategies to handle complex portfolio aggregations.
     `,
     date: "October 2025",
     id: 3,
