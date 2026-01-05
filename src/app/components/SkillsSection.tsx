@@ -7,7 +7,7 @@ export default function SkillsSection({ data }: { data: ResumeData}) {
         <div className="flex flex-col gap-4">
             <h2 className="text-2xl font-bold">Skills</h2>
             <Separator className="my-4" />
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-row gap-4 justify-center text-center">
                 <div className="flex flex-col gap-2">
                     <h3 className="text-lg font-bold">Languages and Tools</h3>
                     <p>{data.skills.languages_and_tools.join(", ")}</p>
