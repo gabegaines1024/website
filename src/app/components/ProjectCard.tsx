@@ -16,7 +16,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                 <CardDescription>{project.date}</CardDescription>
             </CardHeader>
             <CardContent>
-                <p className="whitespace-pre-line">{project.description.trim()}</p>
+                <p className="whitespace-pre-line">{project.description.replace(/\n/g, '').trim()}</p>
             </CardContent>
             {project.link && (
                 <CardFooter>
