@@ -6,11 +6,12 @@ import Header from './components/Header';
 import './globals.css';
 import SkillsSection from './components/SkillsSection';
 import EducationComponent from './components/Education';
-
+import ThemeToggle from './components/ThemeToggle';
 
 export default function App(){
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto p-6">
+      <ThemeToggle />
       <div className="flex flex-col gap-4">
         <Header data={selfResumeData} />
         <Section title="Education">
