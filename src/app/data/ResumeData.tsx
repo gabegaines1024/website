@@ -99,6 +99,7 @@ export const selfProjects: Project[] = [{
     `,
     date: "December 2025",
     id: 1,
+    link: "https://github.com/gabegaines1024/Surge-Prediction-Multiplier"
 }, {
     name: "Ghost Writer",
     description: `
@@ -106,6 +107,7 @@ export const selfProjects: Project[] = [{
     `,
     date: "December 2025",
     id: 2,
+    link: "https://github.com/gabegaines1024/GhostWritter"
 }, {
     name: "GG Trading",
     description: `
@@ -115,6 +117,7 @@ export const selfProjects: Project[] = [{
     `,
     date: "October 2025",
     id: 3,
+    link: "https://github.com/gabegaines1024/Stock-Database"
 }];
 
 export const selfResumeData: ResumeData = {
