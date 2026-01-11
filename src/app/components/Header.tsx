@@ -11,9 +11,13 @@ export default function Header({ data }: { data: ResumeData }) {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tighter">
             {data.name}
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-[600px]">
-            {data.objective}
-          </p>
+          <div className="text-lg md:text-xl text-muted-foreground max-w-[600px] space-y-4">
+            {data.objective.map((paragraph, index) => (
+              <p key={index} className="leading-relaxed">
+                {paragraph}
+              </p>
+            ))}
+          </div>
         </div>
         <div className="flex flex-wrap gap-3 justify-center md:justify-start">
           <Button variant="outline" size="icon" asChild>

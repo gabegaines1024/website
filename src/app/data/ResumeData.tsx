@@ -30,7 +30,7 @@ export interface Project {
 export interface ResumeData {
     name: string;
     email: string;
-    objective: string;
+    objective: string[];
     education: Education[];
     skills: Skills;
     leadership: Leadership[];
@@ -123,7 +123,11 @@ export const selfProjects: Project[] = [{
 export const selfResumeData: ResumeData = {
     name: "Gabe Gaines",
     email: "gabegaines1024@gmail.com",
-    objective: "I am aspiring software engineer/ ML/AI engineer with a passion for building scalable backends & ML Pipelines",
+    objective: [
+        "I am a Computer Science and Mathematics major at Indiana University Bloomington with a specialization in Artificial Intelligence. My passion lies at the intersection of scalable backend engineering and predictive modeling.",
+        "Currently, I am building high-performance APIs and data pipelines using FastAPI, SQLAlchemy, and Scikit-Learn. My recent work includes engineering a real-time Stock Portfolio API and developing statistical prediction models for NBA data.",
+        "Beyond the code, I am the founder of Code.With.Gabe, a platform where I break down complex Data Structures and Algorithms concepts for a broad audience. I am also an active member of ColorStack, advocating for diversity in tech, as well as math club where I strengthen analytical problem-solving skills by engaging in weekly advanced theoretical discussions and collaborating with faculty to deconstruct complex mathematical proofs.",
+    ],
     education: selfEducation,
     skills: selfSkills,
     leadership: selfLeadership,
